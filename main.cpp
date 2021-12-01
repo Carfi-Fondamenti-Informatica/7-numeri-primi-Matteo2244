@@ -1,21 +1,15 @@
+#include <iostream>
 #include "lib.h"
 using namespace std;
-bool primo(int d, int n)
-{
-    if(d==n)
-    {
-      return true;
+int main(){
+    int numero=0;
+    cin>>numero;
+    if(primo(2,numero)){
+        cout<<"numero primo"<<endl;
     }
-    else if(n==1)
-    {
-        return true;
+    else {
+        cout<<"numero non primo"<<endl;
     }
-    else if(n%d==0)
-    {
-        return false;
-
-    }
-    else{
-    return primo(d+1,n);
-    }
+    
+    return 0;
 }
